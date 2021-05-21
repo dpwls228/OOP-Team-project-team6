@@ -8,15 +8,6 @@ import java.util.Scanner;
 import java.io.File;
 
 public class Search {
-	private String findStock;
-	
-	public String getFindStock() {//getter
-		return findStock;
-	}
-	public void setFindStock(String findStock) {//setter
-		this.findStock = findStock;
-	}
-
 	boolean result;
 	
 	//Default Constructor
@@ -71,9 +62,6 @@ public class Search {
 
 public static void main(String[] args) throws IOException {
 	Search test = new Search();
-	System.out.println("Stock Name:");
-	Scanner keyboard =new Scanner(System.in);
-	test.setFindStock(keyboard.nextLine());
 	test.searchMethod(); 
 	}
 }
