@@ -34,9 +34,8 @@ public class Search {
 		Scanner keyboard =new Scanner(System.in);
 		File file = new File("test.txt");
 		BufferedReader in = null;
-		System.out.println("Enter stock to find:");
 		 
-		in = new BufferedReader( new InputStreamReader(System.in)); 
+		in = new BufferedReader( new InputStreamReader(findStock)); 
 		findStock = in.readLine(); //input word
 		    
 		in = new BufferedReader( new FileReader("test.txt"));
@@ -57,7 +56,7 @@ public class Search {
 		}
 		catch (IOException e) {
 
-		        System.err.println(e); // ¿¡·¯°¡ ÀÖ´Ù¸é ¸Ş½ÃÁö Ãâ·Â
+		        System.err.println(e); // ì—ëŸ¬ê°€ ìˆë‹¤ë©´ ë©”ì‹œì§€ ì¶œë ¥
 
 		        System.exit(1);
 
