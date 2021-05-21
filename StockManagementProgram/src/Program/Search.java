@@ -61,8 +61,36 @@ public class Search {
 		in.close();
 	}
 
+public void printMethod() throws IOException{
+		Scanner keyboard =new Scanner(System.in);
+		File file = new File("test.txt");
+		BufferedReader in = null;
+		
+		in = new BufferedReader( new FileReader("test.txt"));
+		String line;
+		
+		try {
+		while((line = in.readLine()) != null){ //file scan
+			result = false;
+		    String[] stockName = line.split(":"); //StockName:15
+		
+		    System.out.println(line);
+		    }
+			
+		}
+		catch (IOException e) {
+
+		        System.err.println(e); // 에러가 있다면 메시지 출력
+
+		        System.exit(1);
+
+		    }
+		in.close();
+	}
+	
 public static void main(String[] args) throws IOException {
 	Search test = new Search();
 	test.searchMethod(); 
+	test.printMethod();
 	}
 }
