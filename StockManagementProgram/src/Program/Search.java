@@ -61,7 +61,7 @@ public class Search {
 		in.close();
 	}
 
-public void printMethod() throws IOException{
+public void printAllMethod() throws IOException{ //print all stock
 		Scanner keyboard =new Scanner(System.in);
 		File file = new File("test.txt");
 		BufferedReader in = null;
@@ -71,9 +71,7 @@ public void printMethod() throws IOException{
 		
 		try {
 		while((line = in.readLine()) != null){ //file scan
-			result = false;
-		    String[] stockName = line.split(":"); //StockName:15
-		
+			System.out.println("----Current number of Stock----");
 		    System.out.println(line);
 		    }
 			
@@ -87,10 +85,10 @@ public void printMethod() throws IOException{
 		    }
 		in.close();
 	}
-	
+
 public static void main(String[] args) throws IOException {
 	Search test = new Search();
 	test.searchMethod(); 
-	test.printMethod();
+	test.printAllMethod();
 	}
 }
