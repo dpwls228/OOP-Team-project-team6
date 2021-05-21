@@ -55,7 +55,8 @@ public class Search {
 		    }
 		
 		if(result == false){
-		    System.out.println("Fail to find" +findStock);
+		    System.out.println("Fail to find " +findStock);
+		    System.out.println("Don't have " +findStock +" in stock");
 		    }
 		in.close();
 	}
