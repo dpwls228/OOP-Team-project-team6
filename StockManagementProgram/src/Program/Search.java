@@ -27,7 +27,7 @@ public class Search {
 		BufferedReader in = null;
 		System.out.println("Enter stock to find:");
 		 
-		in = new BufferedReader( new InputStreamReader(file)); 
+		in = new BufferedReader( new InputStreamReader(System.in)); 
 		findStock = in.readLine(); //input word
 		    
 		in = new BufferedReader( new FileReader("test.txt"));
