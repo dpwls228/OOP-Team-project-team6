@@ -36,7 +36,7 @@ public class Search {
 		BufferedReader in = null;
 		System.out.println("Enter stock to find:");
 		 
-		in = new BufferedReader( new InputStreamReader(System.in)); 
+		in = new BufferedReader( new InputStreamReader(file)); 
 		findStock = in.readLine(); //input word
 		    
 		in = new BufferedReader( new FileReader("test.txt"));
@@ -48,8 +48,8 @@ public class Search {
 		    String[] stockName = line.split(":"); //StockName:15
 		     
 		     if(stockName[0].trim().compareToIgnoreCase(findStock.trim()) == 0){ //if success find
-		      System.out.println("Stock Name" + stockName[0].trim());
-		      System.out.println("Stock Number" + stockName[1]);
+		      System.out.println("Stock Name: " + stockName[0].trim());
+		      System.out.println("Stock Number: " + stockName[1]);
 		      result= true;
 		      break;
 		      }
@@ -57,7 +57,7 @@ public class Search {
 		}
 		catch (IOException e) {
 
-		        System.err.println(e); // ¿¡·¯°¡ ÀÖ´Ù¸é ¸Ş½ÃÁö Ãâ·Â
+		        System.err.println(e); // ì—ëŸ¬ê°€ ìˆë‹¤ë©´ ë©”ì‹œì§€ ì¶œë ¥
 
 		        System.exit(1);
 
