@@ -10,16 +10,6 @@ import java.io.File;
 public class Search {
 	boolean result;
 	
-	//Default Constructor
-	public Search() {
-		findStock = null;
-	}
-	//Constructor
-	public Search(String findStock)
-	{
-		this.findStock = findStock;
-	}
-	
 	public void searchMethod() throws IOException
 	{
 		Scanner keyboard =new Scanner(System.in);
